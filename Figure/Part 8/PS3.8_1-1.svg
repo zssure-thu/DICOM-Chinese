@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="502px" height="337px" viewBox="0 0 502 337" enable-background="new 0 0 502 337" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+	text {
+	  font-family: Helvetica, Verdana, ArialUnicodeMS, san-serif
+	}
+	</style>
+</defs>
+
+<g>
+   <desc>
+	PS 3.8 Network Communication Support for Message Exchange
+   </desc>
+</g>
+
+<g>
+	<rect x="1" y="1" fill="#F6F0D8" width="500" height="335"/>
+	<g>
+		<rect x="105.366" y="29.725" fill="#003468" width="362.624" height="45"/>
+		<rect x="105.366" y="73.824" fill="#005695" width="362.624" height="38.562"/>
+		<rect x="105.366" y="112.387" fill="#4F8ABE" width="362.624" height="38.562"/>
+		<rect x="105.366" y="150.948" fill="#6799C8" width="362.624" height="38.563"/>
+		<rect x="105.366" y="189.512" fill="#86B2D8" width="362.624" height="38.561"/>
+		<rect x="105.366" y="228.072" fill="#B2CEE7" width="362.624" height="38.562"/>
+		<rect x="105.366" y="263.416" fill="#CCDEF0" width="362.624" height="45"/>
+		<text transform="matrix(1 0 0 1 270.2725 25.0918)" font-size="11">Peer Protocol</text>
+		<text transform="matrix(1 0 0 1 361.3652 25.0918)" font-size="11">OSI End-System</text>
+		<text transform="matrix(1 0 0 1 41.2363 55.541)"><tspan x="0" y="0" font-size="10">Application</tspan><tspan x="-7.227" y="39" font-size="10">Presentation</tspan><tspan x="13.345" y="78" font-size="10">Session</tspan><tspan x="6.128" y="117" font-size="10">Transport</tspan><tspan x="12.246" y="156" font-size="10">Network</tspan><tspan x="6.675" y="195" font-size="10">Data Link</tspan><tspan x="11.685" y="234" font-size="10">Physical</tspan></text>
+		<g>
+			<text transform="matrix(1 0 0 1 59.9814 25.0918)" font-size="11">Layer</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 152.6997 25.0918)" font-size="11">OSI End-System</text>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="52.225" x2="359.268" y2="52.225"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="52.225" x2="348.637" y2="52.225"/>
+				<g>
+					<polygon fill="#939598" points="257.426,55.711 244.417,52.225 257.426,48.738 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.259,55.711 359.268,52.225 346.259,48.738 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="131.667" x2="359.262" y2="131.667"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="131.667" x2="348.631" y2="131.667"/>
+				<g>
+					<polygon fill="#939598" points="257.426,135.153 244.417,131.667 257.426,128.181 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.253,135.153 359.262,131.667 346.253,128.181 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="208.791" x2="359.268" y2="208.791"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="208.791" x2="348.637" y2="208.791"/>
+				<g>
+					<polygon fill="#939598" points="257.426,212.277 244.417,208.791 257.426,205.305 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.259,212.277 359.268,208.791 346.259,205.305 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="285.916" x2="359.268" y2="285.916"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="285.916" x2="348.637" y2="285.916"/>
+				<g>
+					<polygon fill="#939598" points="257.426,289.402 244.417,285.916 257.426,282.43 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.259,289.402 359.268,285.916 346.259,282.43 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="93.105" x2="359.268" y2="93.105"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="93.105" x2="348.637" y2="93.105"/>
+				<g>
+					<polygon fill="#939598" points="257.426,96.592 244.417,93.105 257.426,89.619 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.259,96.592 359.268,93.105 346.259,89.619 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="170.23" x2="359.262" y2="170.23"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="170.23" x2="348.631" y2="170.23"/>
+				<g>
+					<polygon fill="#939598" points="257.426,173.717 244.417,170.23 257.426,166.744 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.253,173.717 359.262,170.23 346.253,166.744 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<line fill="#939598" x1="244.417" y1="247.354" x2="359.268" y2="247.354"/>
+			<g>
+				
+					<line fill="none" stroke="#939598" stroke-width="3" stroke-miterlimit="1" x1="255.048" y1="247.354" x2="348.637" y2="247.354"/>
+				<g>
+					<polygon fill="#939598" points="257.426,250.84 244.417,247.354 257.426,243.867 					"/>
+				</g>
+				<g>
+					<polygon fill="#939598" points="346.259,250.84 359.268,247.354 346.259,243.867 					"/>
+				</g>
+			</g>
+		</g>
+		<rect x="105.366" y="303.277" fill="#D1D3D4" stroke="#D1D3D4" width="362.624" height="18.383"/>
+		
+			<rect x="152.38" y="35.869" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" width="90" height="266.4"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="264.221" x2="242.38" y2="264.221"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="226.174" x2="242.38" y2="226.174"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="188.127" x2="242.38" y2="188.127"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="150.013" x2="242.38" y2="150.013"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="111.965" x2="242.38" y2="111.965"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="152.38" y1="73.917" x2="242.38" y2="73.917"/>
+		
+			<rect x="361.045" y="35.869" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" width="90" height="266.4"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="264.221" x2="451.045" y2="264.221"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="226.174" x2="451.045" y2="226.174"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="188.127" x2="451.045" y2="188.127"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="150.013" x2="451.045" y2="150.013"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="111.965" x2="451.045" y2="111.965"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1" x1="361.045" y1="73.917" x2="451.045" y2="73.917"/>
+		<text transform="matrix(1 0 0 1 263.5781 316.8408)" font-size="10">Physical Media</text>
+	</g>
+</g>
+</svg>
