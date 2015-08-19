@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="502px" height="257px" viewBox="0 0 502 257" enable-background="new 0 0 502 257" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+	text {
+	  font-family: Helvetica, Verdana, ArialUnicodeMS, san-serif
+	}
+	</style>
+</defs>
+
+<g>
+   <desc>
+	PS 3.8 Network Communication Support for Message Exchange
+   </desc>
+</g>
+
+<g>
+	<rect x="1" y="1" fill="#F6F0D8" width="500" height="255"/>
+	<g>
+		<rect x="75.629" y="20.092" fill="#FFFFFF" width="105.958" height="217"/>
+		<rect x="181.587" y="20.092" fill="#CCDEF0" width="134.5" height="217"/>
+		<rect x="315.588" y="20.092" fill="#B2CEE7" width="106.721" height="217"/>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 225.0688 44.1787)"><tspan x="0" y="0" font-size="11">DICOM UL</tspan><tspan x="-13.457" y="13.2" font-size="11">Service Provider</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 106.1748 44.1787)" font-size="11">Requestor</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 8.2656 52.293)"><tspan x="0" y="0" font-size="11">A-ASSOCIATE</tspan><tspan x="18.635" y="13.2" font-size="11">request</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 8.2656 178.1484)"><tspan x="0" y="0" font-size="11">A-ASSOCIATE</tspan><tspan x="7.022" y="13.201" font-size="11">confirmation</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 426.0254 90.4287)"><tspan x="0" y="0" font-size="11">A-ASSOCIATE</tspan><tspan x="13.741" y="13.2" font-size="11">indication</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 426.0254 141.3086)"><tspan x="0" y="0" font-size="11">A-ASSOCIATE</tspan><tspan x="14.354" y="13.201" font-size="11">response</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 351.916 44.1787)" font-size="11">Acceptor</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 300.4629 231.1816)" font-size="11">( SAP )</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 166.4634 231.1816)" font-size="11">( SAP )</text>
+		</g>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="4" stroke-linecap="round" stroke-miterlimit="1" x1="316.088" y1="215.514" x2="316.088" y2="19.908"/>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="4" stroke-linecap="round" stroke-miterlimit="1" x1="181.587" y1="215.514" x2="181.587" y2="19.908"/>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="2" stroke-linecap="round" stroke-miterlimit="1" stroke-dasharray="4" x1="311.088" y1="73.874" x2="186.587" y2="73.874"/>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="2" stroke-linecap="round" stroke-miterlimit="1" stroke-dasharray="4" x1="311.088" y1="163.809" x2="186.587" y2="163.809"/>
+		<g>
+			<g>
+				<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="76.678" y1="56.138" x2="172.245" y2="72.018"/>
+				<g>
+					<polygon fill="#005695" points="169.814,74.559 180.985,73.47 170.767,68.827 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="85.417" y1="179.69" x2="180.985" y2="163.81"/>
+				<g>
+					<polygon fill="#005695" points="87.848,182.231 76.678,181.143 86.896,176.5 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="318.001" y1="73.874" x2="413.569" y2="89.755"/>
+				<g>
+					<polygon fill="#005695" points="411.139,92.296 422.309,91.207 412.091,86.564 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				
+					<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="326.74" y1="162.355" x2="422.309" y2="146.475"/>
+				<g>
+					<polygon fill="#005695" points="329.172,164.896 318.001,163.808 328.219,159.165 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
