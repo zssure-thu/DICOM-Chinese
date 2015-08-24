@@ -23,3 +23,17 @@ DICOM标准由DICOM标准委员会制定。<br>
 <center>![Figure 6-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_6-1.jpg)</center><br>
 <center>Figure 6-1. DICOM Network Protocol Architecture</center><br>
 <h1><font face="Microsoft YaHei" color=blue>7 DICOM应用实体的OSI上层服务</font></h1>
+该章节将介绍如何使用OSI关联控制服务元(ACSE)和表示层构建上层服务为DICOM应用实体间的通信提供必要的支持。该上层服务完全遵循关联控制服务元以及OSI表示层规范。<br>
+上层服务内容列于表7-1，如下所示：<br>
+<center>Table 7-1 Upper Layer Services</center><br>
+<center>![Table 7-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_Table7-1.jpg)</center><br>
+除了介绍上层服务规范，本章节给出了DICOM应用实体使用上层服务各元素时的参数定义。关于上层服务的使用指南在标准第7部分有介绍（参见[PS3.7](http://dicom.nema.org/medical/dicom/current/output/html/part07.html#PS3.7))。<br>
+<h2><font face="Microsoft YaHei" color=green>7.1 A-ASSOCIATE连接服务</font></h2>
+两个DICOM应用实体间连接的建立需要通过关联控制服务元的请求、指示、响应、确认四种原语来完成。下文中将服务的发起者称之为请求方，将接收A-ASSOCIATE指示的使用者称之为接收方。该连接服务是一种确认服务。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>A-ASSOCIATE连接服务相当于通过点对点接口创建一个信道(详情可参见已弃用的标准第九部分PS3.9）<b></b></font><br>
+图7-1描述了两个DICOM应用实体间连接的建立。<br>
+<center>![Figure 7-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-1.jpg)</center><br>
+<center>Figure 7-1 Associate Request</center><br>
+<h3><font face="Microsoft YaHei" color=purple>7.1.1 A-ASSOCIATE参数</font></h3>
+
