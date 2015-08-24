@@ -62,12 +62,12 @@ UF<br>
 <h3><font face="Microsoft YaHei" color=purple>7.1.1 A-ASSOCIATE参数</font></h3>
 表7-2列出了DICOM应用实体使用A-ASSOCIATE服务时所需的各项参数。<br>
 <center>Table 7-2 Key A-ASSOCIATE Service Parameters</center><br>
-<center></center><br>
+<center>![Table 7-2](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_Table7-2.jpg)</center><br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font color=red>关于表中的约定参见该部分第5章节。</font><br>
 表7-3列出了DICOM应用实体在A-ASSOCIATE服务中的固定值参数或不需要的参数。<br>
 <center>Table 7-3. A-ASSOCIATE Service Parameter (Fixed or Not Used)</center></br>
-<center></center></br>
+<center>![Table 7-3](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_Table7-3.jpg)</center></br>
 <h4><font face="Microsoft YaHei" color=purple>7.1.1.1 模式（固定值）</font></h4>
 该参数允许使用OSI-ACSE服务中的可选模式进行协商。在DICOM应用实体之间仅允许使用默认的“normal”（正常），因此该参数应始终被设定为“normal”。<br>
 <h4><font face="Microsoft YaHei" color=purple>7.1.1.2 应用上下文名称</font></h4>
