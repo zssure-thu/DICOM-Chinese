@@ -15,6 +15,30 @@ DICOM标准由DICOM标准委员会制定。<br>
 <center>Figure 1-1 ISO OSI Basic Reference Model</center><br>
 
 ----------
+<h1><font face="Microsoft YaHei" color=blue>5 约定</font></h1>
+下文中描述各项服务的表格中用到的约定如下：<br>
+(=)<br>
+指示（确认）使用的参数值与请求（响应）中的相同。<br>
+C<br>
+有条件的（用户可选的）<br>
+M<br>
+强制使用
+MF<br>
+强制使用确定数值<br>
+NU<br>
+未使用的<br>
+P<br>
+初始化t提供<br>
+U<br>
+用户可选的<br>
+UF<br>
+用户可选但数值固定<br>
+<br>
+空白项不适用上述约定。<br>
+
+
+
+
 
 <h1><font face="Microsoft YaHei" color=blue>6 网络通信支持环境</font></h1>
 本文档PS3.8中规定的网络通信服务，是支持DICOM应用实体通信的一套基础服务，是OSI表示层（ISO 8822)和OSI关联控制服务ACSE（ISO 8649)的子集，被称为上层服务或UL服务（即，the Upper Layer Service or UL Service）。关于DICOM UL服务详细内容在第7章节介绍。<br>
@@ -36,4 +60,27 @@ DICOM标准由DICOM标准委员会制定。<br>
 <center>![Figure 7-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-1.jpg)</center><br>
 <center>Figure 7-1 Associate Request</center><br>
 <h3><font face="Microsoft YaHei" color=purple>7.1.1 A-ASSOCIATE参数</font></h3>
+表7-2列出了DICOM应用实体使用A-ASSOCIATE服务时所需的各项参数。<br>
+<center>Table 7-2 Key A-ASSOCIATE Service Parameters</center><br>
+<center></center><br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>关于表中的约定参见该部分第5章节。</font><br>
+表7-3列出了DICOM应用实体在A-ASSOCIATE服务中的固定值参数或不需要的参数。<br>
+<center>Table 7-3. A-ASSOCIATE Service Parameter (Fixed or Not Used)</center></br>
+<center></center></br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.1 模式（固定值）</font></h4>
+该参数允许使用OSI-ACSE服务中的可选模式进行协商。在DICOM应用实体之间仅允许使用默认的“normal”（正常），因此该参数应始终被设定为“normal”。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.2 应用上下文名称</font></h4>
+该参数定义了请求方建议的应用上下文名称。接收方可以返回相同或不同的应用上下文名称。返回的名称用于标定本次链接应用上下文。关于应用上下文名称的详细讨论请参见[附录A]()。<br>
+应用上下文是一个定义明确的集合，包括应用服务元素、相关选项、以及应用实体间完成交互必须的其他信息。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red><font color=yellow>接收方返回的应用上下文提供了限定协商的机制。</font>倘若请求方不能按照接收方提供的应用上下文进行操作，应当发布一个A-Abort（放弃）请求原语。在标准第7部分（PS3.7）中定义了DICOM应用实体应用上下文名称以及使用规则。</font><br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.3 呼叫方应用实体名称（Calling AE Title)</font></h4>
+该参数定义了包含A-ASSOCIATE链接服务请求方的应用实体，基于源DICOM应用名称。关于DICOM应用名称与应用实体名称之间的关系参见[附录C]()。呼叫方应用实体名称与在连接中传递的DICOM消息所含的发起方地址可能相同也可能不同。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>接收到A-ASSOCIATE-RQ链接请求的上层用户负责验证呼叫方应用实体名称是否属于已知的远程DICOM应用名称。</font><br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.4 被叫方应用实体名称（Called AE Title)</font></h4>
+该参数用于定义包含预期A-ASSOCIATE服务接收方的应用实体，基于目标DICOM应用名称。关于DICOM应用名称与应用实体名称之间的关系参见[附录C]()。被叫方应用实体名称与在连接中传递的DICOM消息所含的接收方地址可能相同也可能不同。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>接收到A-ASSOCIATE-RQ链接请求的上层用户负责验证被叫方应用实体名称是否是它的DICOM应用名称（或其DICOM应用名称之一）。</font><br>
 
