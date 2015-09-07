@@ -103,3 +103,6 @@ c. 拒绝（临时）；<br>
 a. 上层服务使用者；<br>
 b. 上层服务提供者（关联控制服务相关函数）;<br>
 c. 上层服务提供者（表示层相关函数）;<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>如果7.1.1.7的结果参数返回值为“接受”,该参数对应取值为“上层服务使用者”，即a。<br>
+</font><br>
