@@ -75,12 +75,31 @@ UF<br>
 应用上下文是一个定义明确的集合，包括应用服务元素、相关选项、以及应用实体间完成交互必须的其他信息。<br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font color=red><font color=yellow>接收方返回的应用上下文提供了限定协商的机制。</font>倘若请求方不能按照接收方提供的应用上下文进行操作，应当发布一个A-Abort（放弃）请求原语。在标准第7部分（PS3.7）中定义了DICOM应用实体应用上下文名称以及使用规则。</font><br>
-<h4><font face="Microsoft YaHei" color=purple>7.1.1.3 呼叫方应用实体名称（Calling AE Title)</font></h4>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.3 呼叫方应用实体名称</font></h4>
 该参数定义了包含A-ASSOCIATE链接服务请求方的应用实体，基于源DICOM应用名称。关于DICOM应用名称与应用实体名称之间的关系参见[附录C]()。呼叫方应用实体名称与在连接中传递的DICOM消息所含的发起方地址可能相同也可能不同。<br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font color=red>接收到A-ASSOCIATE-RQ链接请求的上层用户负责验证呼叫方应用实体名称是否属于已知的远程DICOM应用名称。</font><br>
-<h4><font face="Microsoft YaHei" color=purple>7.1.1.4 被叫方应用实体名称（Called AE Title)</font></h4>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.4 被叫方应用实体名称</font></h4>
 该参数用于定义包含预期A-ASSOCIATE服务接收方的应用实体，基于目标DICOM应用名称。关于DICOM应用名称与应用实体名称之间的关系参见[附录C]()。被叫方应用实体名称与在连接中传递的DICOM消息所含的接收方地址可能相同也可能不同。<br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font color=red>接收到A-ASSOCIATE-RQ链接请求的上层用户负责验证被叫方应用实体名称是否是它的DICOM应用名称（或其DICOM应用名称之一）。</font><br>
-
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.5 响应应用实体名称（固定值）</font></h4>
+该参数定义了实际A-ASSOCIATE服务接收者的应用实体名称。在本标准中（[DICOM3.0](http://dicom.nema.org/standard.html)）该参数值应当始终与A-ASSOCIATE指示原语中的被叫方应用实体名称相同。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.6 用户信息</font></h4>
+该参数包括链接的请求方和接收方的DICOM应用实体中的用户信息，其具体含义依赖于原语的应用长下文。关于该参数的详细介绍参见[附录D]()。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>1. 该参数给出与‘应用上下文名称’参数相对应的DICOM应用实体的初始化信息。<br>
+2. 附录D详细介绍了用户信息的各个子项，附加子项的定义参见标准第7部分（即PS3.7），另外关于子项中服务类应用消息的详细介绍需要参见标准第4部分（即PS3.4）</font><br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.7 结果</font></h4>
+该参数或由连接请求接收方的上层服务提供者的关联控制服务相关函数提供，或<u><font color=yellow>直接</font></u>由上层服务提供者的表示层相关函数提供，用于表示使用连接服务的结果。该参数取下述值之一：<br>
+a. 接受；<br>
+b. 拒绝（永久）；<br>
+c. 拒绝（临时）；<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>当连接请求方得到的返回结果是“拒绝（永久）”时，意味着该连接请求没有后续接入的必要。例如当远端DICOM应用名称未知时，该状态用于阻止连接的建立。<br>
+</font><br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.8 结果来源</font></h4>
+该参数值由上层服务提供者给出，指出了产生结果参数以及诊断参数（如果有的话）的来源。参数值如下：<br>
+a. 上层服务使用者；<br>
+b. 上层服务提供者（关联控制服务相关函数）;<br>
+c. 上层服务提供者（表示层相关函数）;<br>
