@@ -23,7 +23,8 @@ The Chinese version of DICOM 3.0 Standard.<br>
 >4. 各Part的每一级（例如第二级、第三级、第四纪）的内容长度不同，因此翻译工作不做强制要求。只要求每次提交完整一段即可，例如下图红色矩形框都算一段，每次至少提交一个完整段落即可。<br>
 ><b>......</b>
 
-
+<b><font face="Microsoft YaHei" color=blue size=4>备注：</font></b><br>
+之前博文中介绍过DICOM标准中文版书籍的协作模式，之所以选择看云平台目的是希望更多的人员加入，例如英语专业。非医疗从业者也十分欢迎，对翻译中的语言进行评判修改。对于IT从业者，熟练使用SVN和GIT各种版本工具的人员，可以通过Github直接发起Pull requests请求，待审核通过后合并到master主线中。
 <br>
 <br>
 <br>
