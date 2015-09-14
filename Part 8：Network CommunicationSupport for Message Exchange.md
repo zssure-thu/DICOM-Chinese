@@ -138,5 +138,7 @@ f. 表现层服务访问点不可用<br>
 该参数是结构化目标地址，包含一个明确的全球网络地址，通常是一个TCP/IP地址。详情参见附录C。<br>
 <h4><font face="Microsoft YaHei" color=purple>7.1.1.11 被请求方表现层地址</font></h4>
 该参数是结构化目标地址，包含一个明确的全球网络地址，通常是一个TCP/IP地址。详情参见附录C。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.12 响应中的表现层地址</font></h4>
+DICOM3.0标准中，响应中的表现层地址应该与A-ASSOCIATE连接指示原语中的被请求方表现层地址相同。该参数包含一个明确唯一的全球网络地址。<br>
 
 
