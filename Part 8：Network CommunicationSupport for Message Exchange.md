@@ -63,6 +63,8 @@ UF<br>
 ><font color=gray>所谓服务原语，是代表响应服务的符号和参数的一种格式化、规范化的表示，它与服务的具体实现方式无关。原语都是发送给服务实体相邻层的，层与层之间的通信原语分为请求（Request）、指示（Indication）、响应（Response）、确认（Confirm）四种。</font><br><br>
 ><font color=gray>图7-1中的SAP，全称Service Accessing Point，即服务访问点。是上层访问下层所提供服务的点。在计算机体系结构中，下层是为相邻上层提供服务的，而下层对它的所有上层都是透明的。</font><br><br>
 >在传统的点对点（或端到端）的模型中四种原语体现的不是很具体，其原因是点对点（或端到端）的模型将双方实体抽象成了一个点，而未考虑各自内部的OSI开放模型。如果将每个端点展开为OSI层模型，即可理解上述四种服务原语。<br>
+
+
 <h3><font face="Microsoft YaHei" color=purple>7.1.1 A-ASSOCIATE参数</font></h3>
 表7-2列出了DICOM应用实体使用A-ASSOCIATE服务时所需的各项参数。<br>
 <center>Table 7-2 Key A-ASSOCIATE Service Parameters</center><br>
