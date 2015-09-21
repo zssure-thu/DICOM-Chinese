@@ -165,4 +165,16 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 该参数允许对除了“会话核心”之外的会话功能单元进行协商，但DICOM应用实体只使用具有全双工的核心功能单元。<br>
 <h4><font face="Microsoft YaHei" color=purple>7.1.1.17 其他参数</font></h4>
 其他在DICOM应用实体交互时非必须的以及本标准中未使用的参数,此处不单独介绍。相关定义可参见开放系统互连中的关联控制服务，即OSI ACSE（ISO 8649)，以及表示层服务，即OSI Presentation Service（ISO 8822）。<br>
+<h3><font face="Microsoft YaHei" color=purple>7.1.2 A-ASSOCIATE服务流程</font></h3>
+<b>7.1.2.1</b><br> DICOM应用实体（包括上层服务使用者）通过发起A-ASSOCIATE请求原语期望建立一个连接。被请求应用实体由请求原语中的参数定义。在接收到A-ASSOCIATE确认原语之前请求方不允许触发除放弃请求原语（即A-ABORT）以外的任何原语。<br>
+<b>7.1.2.2</b><br> 上层服务提供者发出A-ASSOCIATE指示原语到被请求应用实体。<br>
+<b>7.1.2.3</b><br> 被请求应用实体通过发送包含适当结果参数的A-ASSOCATE响应原语，来表示接受或拒绝该链接。上层服务提供者应当发出包含相同结果参数的A-ASSOCIATE确认原语，此时结果源参数应该被设置为上层服务使用者。
+<b>7.1.2.4</b><br> 如果接收方接受请求后，该链接方可使用。双方应用实体可使用DICOM应用上下文中规定的除A-ASSOCIATE之外的任何有效服务。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font color=red>这意味着一旦建立连接，双方即可传输DICOM消息（关于DICOM消息的定义参见标准第7部分，即PS3.7）<br>
+</font><br>
+<b>7.1.2.5</b><br>
+<b>7.1.2.6</b><br>
+<b>7.1.2.7</b><br>
+
 
