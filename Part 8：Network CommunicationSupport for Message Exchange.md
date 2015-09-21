@@ -159,3 +159,10 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 <font color=red>结果的顺序可能与原始的排序不同，因此结果不应该按照标号进行排序，且指示方不应假定或依赖于结果的特定顺序。<br>
 </font><br>
 标准规定每一个表示上下文只允许一种传输语义，即使表示上下文定义列表中给出了多种可供选择的传输语义。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.15 表示规定（固定值）</font></h4>
+该参数允许对除了“表示核心”之外的表示功能单元进行协商，但DICOM应用实体中只用到了核心功能单元。因此本协议中该参数总是设置为“Presentation Kernel”，即表示核心。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.16 会话规定（固定值）</font></h4>
+该参数允许对除了“会话核心”之外的会话功能单元进行协商，但DICOM应用实体只使用具有全双工的核心功能单元。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.1.1.17 其他参数</font></h4>
+其他在DICOM应用实体交互时非必须的以及本标准中未使用的参数,此处不单独介绍。相关定义可参见开放系统互连中的关联控制服务，即OSI ACSE（ISO 8649)，以及表示层服务，即OSI Presentation Service（ISO 8822）。<br>
+
