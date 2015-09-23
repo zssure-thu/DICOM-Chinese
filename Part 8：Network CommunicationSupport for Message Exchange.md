@@ -184,6 +184,7 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 <h3><font face="Microsoft YaHei" color=purple>7.2.1 A-RELEASE参数</font></h3>
 表7-4列出了A-RELEASE服务的各种参数，包括固定值或本标准中DICOM应用实体未使用的参数。<br>
 <center>Table 7-4 A-RELEASE服务参数</center>
-<center></center>
+<center>![](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_Table7-7.jpg)</center>
 <h4><font face="Microsoft YaHei" color=purple>7.2.1.1 原因（固定值）</font></h4>
+请求原语中用该参数来定义请求的紧迫程度。本标准中该参数使用设定为“正常”，即“normal”。<br>
 
