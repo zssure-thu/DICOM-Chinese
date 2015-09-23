@@ -12,7 +12,7 @@ DICOM标准由DICOM标准委员会制定。<br>
 <h1><font face="Microsoft YaHei" color=blue>1 应用范围与领域</font></h1>
 该文档PS 3部分中介绍的通信协议<u>严格遵循</u>ISO国际化标准组织规定的开放系统互联参考模型（Open Systems Interconnection Basic Reference Model，参见ISO 7498-1 图1-1）。主要涉及的相关层有：物理层、数据链路层、网络层、传输层、会话层、表示层和应用层中的关联控制服务（ACSE，Association Control Services）。本文档中的通信协议符合TCP/IP通用标准，而并不只针对于本标准。应用层协议的其他方面放到本标准的其他部分（PS3.1)来讨论。<br>
 <center>![Figure 1-1 ISO OSI Basic Reference Model](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_1-1.jpg)</center><br>
-<center>Figure 1-1 ISO OSI Basic Reference Model</center><br>
+<center>图1-1 ISO OSI Basic Reference Model</center><br>
 
 ----------
 <h1><font face="Microsoft YaHei" color=blue>5 约定</font></h1>
@@ -45,7 +45,7 @@ UF<br>
 上层服务（UL Service）由第9章节中的TCP/IP顶层协议提供。<br>
 图6-1展示了支持DICOM应用实体通信的TCP/IP协议栈。<br>
 <center>![Figure 6-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_6-1.jpg)</center><br>
-<center>Figure 6-1. DICOM Network Protocol Architecture</center><br>
+<center>图6-1. DICOM网络协议框架</center><br>
 <h1><font face="Microsoft YaHei" color=blue>7 DICOM应用实体的OSI上层服务</font></h1>
 该章节将介绍如何使用OSI关联控制服务元(ACSE)和表示层构建上层服务为DICOM应用实体间的通信提供必要的支持。该上层服务完全遵循关联控制服务元以及OSI表示层规范。<br>
 上层服务内容列于表7-1，如下所示：<br>
@@ -58,7 +58,7 @@ UF<br>
 <font color=red>A-ASSOCIATE连接服务相当于通过点对点接口创建一个信道(详情可参见已弃用的标准第九部分PS3.9）<b></b></font><br>
 图7-1描述了两个DICOM应用实体间连接的建立。<br>
 <center>![Figure 7-1](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-1.jpg)</center><br>
-<center>Figure 7-1 Associate Request</center><br>
+<center>图7-1 连接请求</center><br>
 <b><font color=gray>译者注：</font></b>
 ><font color=gray>所谓服务原语，是代表响应服务的符号和参数的一种格式化、规范化的表示，它与服务的具体实现方式无关。原语都是发送给服务实体相邻层的，层与层之间的通信原语分为请求（Request）、指示（Indication）、响应（Response）、确认（Confirm）四种。</font><br><br>
 ><font color=gray>图7-1中的SAP，全称Service Accessing Point，即服务访问点。是上层访问下层所提供服务的点。在计算机体系结构中，下层是为相邻上层提供服务的，而下层对它的所有上层都是透明的。</font><br><br>
@@ -168,13 +168,22 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 <h3><font face="Microsoft YaHei" color=purple>7.1.2 A-ASSOCIATE服务流程</font></h3>
 <b>7.1.2.1</b><br> DICOM应用实体（包括上层服务使用者）通过发起A-ASSOCIATE请求原语期望建立一个连接。被请求应用实体由请求原语中的参数定义。在接收到A-ASSOCIATE确认原语之前请求方不允许触发除放弃请求原语（即A-ABORT）以外的任何原语。<br>
 <b>7.1.2.2</b><br> 上层服务提供者发出A-ASSOCIATE指示原语到被请求应用实体。<br>
-<b>7.1.2.3</b><br> 被请求应用实体通过发送包含适当结果参数的A-ASSOCATE响应原语，来表示接受或拒绝该链接。上层服务提供者应当发出包含相同结果参数的A-ASSOCIATE确认原语，此时结果源参数应该被设置为上层服务使用者。
-<b>7.1.2.4</b><br> 如果接收方接受请求后，该链接方可使用。双方应用实体可使用DICOM应用上下文中规定的除A-ASSOCIATE之外的任何有效服务。<br>
+<b>7.1.2.3</b><br> 被请求应用实体通过发送包含适当结果参数的A-ASSOCATE响应原语，来表示接受或拒绝该链接。上层服务提供者应当发出包含相同结果参数的A-ASSOCIATE确认原语，此时结果源参数应该被设置为上层服务使用者。<br>
+<b>7.1.2.4</b> 如果接收方接受请求后，该链接方可使用。双方应用实体可使用DICOM应用上下文中规定的除A-ASSOCIATE之外的任何有效服务。<br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font color=red>这意味着一旦建立连接，双方即可传输DICOM消息（关于DICOM消息的定义参见标准第7部分，即PS3.7）<br>
 </font><br>
-<b>7.1.2.5</b><br>
-<b>7.1.2.6</b><br>
-<b>7.1.2.7</b><br>
-
+<b>7.1.2.5</b> 如果被请求方应用实体拒绝，该链接建立失败。<br>
+<b>7.1.2.6</b> 上层服务提供者有可能无法支持该请求连接，此刻应当返回包含适当结果参数（即拒绝）的A-ASSOCIATE确认原语给请求方，与此同时设置结果源参数为“上层服务提供者（ACSE相关功能）”或“上层服务提供者（表示层相关功能）”。不发送指示原语，拒绝建立连接。<br> 
+<b>7.1.2.7</b> 连接请求方或接收方都有可能通过发送放弃请求原语（即A-ABORT)中断连接服务流程(详情参见7.3章节）。此时远端应用实体会接收到A-ABORT指示原语，中断建立该连接。<br>
+<h2><font face="Microsoft YaHei" color=green>7.2 A-RELEASE解除服务</font></h2>
+应用实体双方间标准的释放服务应当通过关联控制服务中A-RELEASE的请求、指示、响应和确认原语来完成。下文中服务发起者被称为请求方，接收A-RELEASE指示的服务使用者被称为接收方。A-RELEASE释放服务是确认服务。<br>
+图7-2给出了连接双方应用实体间正常的释放服务。<br>
+![](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-2.jpg)
+<center>图7-2 连接释放</center>
+<h3><font face="Microsoft YaHei" color=purple>7.2.1 A-RELEASE参数</font></h3>
+表7-4列出了A-RELEASE服务的各种参数，包括固定值或本标准中DICOM应用实体未使用的参数。<br>
+<center>Table 7-4 A-RELEASE服务参数</center>
+<center></center>
+<h4><font face="Microsoft YaHei" color=purple>7.2.1.1 原因（固定值）</font></h4>
 
