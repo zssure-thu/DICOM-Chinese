@@ -187,4 +187,17 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 <center>![](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_Table7-7.jpg)</center>
 <h4><font face="Microsoft YaHei" color=purple>7.2.1.1 原因（固定值）</font></h4>
 请求原语中用该参数来定义请求的紧迫程度。本标准中该参数使用设定为“正常”，即“normal”。<br>
+<h4><font face="Microsoft YaHei" color=purple>7.2.1.2 结果（固定值）</font></h4>
+在本标准中，该参数总是设置为“确定”，即“affirmative”。
+<h3><font face="Microsoft YaHei" color=purple>7.2.2 A-RELEASE服务流程</font></h3>
+<b>7.2.2.1</b> 上层服务使用者要释放连接时需要发送A-RELEASE请求原语，待接收到A-RELEASE确认原语后，再发送A-ABORT请求原语。<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font face="Microsoft YaHei" color=red>倘若A-RELEASE服务请求方没有发送A-ABORT原语，它依然可以接收P-DATA指示原语。</font><br>
+><b>译者注：</b>上述“注意”的意思是说在A-RELEASE服务使用过程中，如果请求方没有完成整个流程（如上所述中提到的只发送了A-RELEASE请求原语，接收到A-RELEASE确认原语后未接着发送A-ABORT原语），连接不会断开，依然可以接收P-DATA数据。<br>
 
+<b>7.2.2.2</b> 上层服务提供者需要发送A-RELEASE指示原语给接收者，随后接收者可发送A-RELEASE响应原语，或A-ABORT请求原语，或P-DATA请求原语。
+><b>译者注：</b>之前关于服务原语（service primitive）在7.1中简单介绍过。如前文所述：在传统的点对点（或端到端）的模型中四种原语体现的不是很具体，其原因是点对点（或端到端）的模型将双方实体抽象成了一个点，而未考虑各自内部的OSI开放模型。如果将每个端点展开为OSI层模型，即可理解上述四种服务原语。下图Figure 7-1-zs将Figure 7-1的OSI模型进行了展开，使得服务原语一目了然。<br>
+
+<center>![]()</center>
+<center>Figure 7-1-zs(译者注）</center>
+<b>7.2.2.3</b> 
