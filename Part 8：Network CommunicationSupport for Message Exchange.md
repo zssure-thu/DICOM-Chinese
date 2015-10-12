@@ -199,7 +199,7 @@ DICOM应用实体使用的抽象语义的详细定义参见标准第4部分，�
 ><b>译者注：</b>之前关于服务原语（service primitive）在7.1中简单介绍过。如前文所述：在传统的点对点（或端到端）的模型中四种原语体现的不是很具体，其原因是点对点（或端到端）的模型将双方实体抽象成了一个点，而未考虑各自内部的OSI开放模型。如果将每个端点展开为OSI层模型，即可理解上述四种服务原语。下图Figure 7-1-zs将Figure 7-1的OSI模型进行了展开，使得服务原语一目了然。<br>
 
 <center>![](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-1-zs.jpg)</center>
-<center>Figure 7-1-zs(译者注）</center>
+<center>Figure 7-1-zs(译者注）</center><br>
 <b>7.2.2.3</b> 为了完成A-RELEASE服务，接收方在接收到A-RELEASE指示原语后需要反馈A-RELEASE响应原语。作为接收方的DICOM应用实体总是返回结果参数（即7.1.2）为“确定”（即“affirmative”）的A-RELEASE响应原语用于接受请求方释放连接的请求。<br>
 <b>7.2.2.4</b> 在接收方发送A-RELEASE响应原语后，不应在该连接上发送任何原语包括P-DATA请求。<br>
 <b>7.2.2.5</b> 上层服务提供者应当总是发送结果参数（即7.1.2）为“确定”的A-RELEASE确认原语。<br>
