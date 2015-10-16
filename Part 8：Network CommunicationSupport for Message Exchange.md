@@ -209,3 +209,12 @@ a. 连接请求方发送A-RELEASE响应原语。<br>
 b. 连接接收方等待对方的A-RELEASE确认原语，带接收后发送A-RELEASE响应原语<br>
 c. 连接请求方接收到A-RELEASE确认原语。<br>
 连接应当在ACSE服务使用者双方都收到A-RELEASE确认原语后释放。<br>
+<h2><font face="Microsoft YaHei" color=green>7.3 A-ABORT中止服务</font></h2>
+><b>译者注：</b>**中止**，指（做事）中途停止；使中途停止；**终止**，停止，不再继续。这里翻译成中止比较恰当。
+
+
+双方应用实体的任意一方皆可通过发起ACSE的中止服务来非正常释放当前连接。该操作是非确认操作（<b><font color=gray>译者注：即不需要握手</font></b>）。然而，由于A-ABORT中止服务的流程可能会发生冲突，因而不确保指示原语的传输。当发生冲突时，双方应用实体意识到该连接已经被中断。A-ABORT中止服务通过A-ABORT中止请求原语和A-ABORT指示原语完成。（<b><font color=gray>译者注：即对应上文中的“non-confirmed”非确认</font></b>）<br>
+<b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
+<font face="Microsoft YaHei" color=red>在已建立的连接上发送A-ABORT中止服务请求原语可能会破坏正在传输中的数据。</font><br>
+图7-3给出了在两个应用实体间中止已建立连接的过程。<br>
+<center>[]()</center>

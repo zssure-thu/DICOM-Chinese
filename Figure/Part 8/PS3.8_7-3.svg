@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="502px" height="152px" viewBox="0 0 502 152" enable-background="new 0 0 502 152" xml:space="preserve">
+
+<defs>
+	<style type="text/css">
+	text {
+	  font-family: Helvetica, Verdana, ArialUnicodeMS, san-serif
+	}
+	</style>
+</defs>
+
+<g>
+   <desc>
+	PS 3.8 Network Communication Support for Message Exchange
+   </desc>
+</g>
+
+<g>
+	<rect x="1" y="1" fill="#F6F0D8" width="500" height="150"/>
+	<g>
+		<rect x="76.693" y="17.254" fill="#FFFFFF" width="105.795" height="117.676"/>
+		<rect x="182.488" y="17.254" fill="#CCDEF0" width="134.5" height="117.676"/>
+		<rect x="316.488" y="17.254" fill="#B2CEE7" width="106.803" height="117.676"/>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 225.9692 41.3408)"><tspan x="0" y="0" font-size="11">DICOM UL</tspan><tspan x="-13.457" y="13.2" font-size="11">Service Provider</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 107.0752 41.3408)" font-size="11">Requestor</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 29.2144 51.9751)"><tspan x="0" y="0" font-size="11">A-ABORT</tspan><tspan x="6.102" y="13.2" font-size="11">request</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 429.6934 85.0713)"><tspan x="0" y="0" font-size="11">A-ABORT</tspan><tspan x="1.209" y="13.2" font-size="11">indication</tspan></text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 352.8164 41.3408)" font-size="11">Acceptor</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 301.3633 128.9834)" font-size="11">( SAP )</text>
+		</g>
+		<g>
+			<text transform="matrix(0.8815 0 0 1 167.3638 128.9834)" font-size="11">( SAP )</text>
+		</g>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="4" stroke-linecap="round" stroke-miterlimit="1" x1="316.988" y1="113.336" x2="316.988" y2="17.07"/>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="4" stroke-linecap="round" stroke-miterlimit="1" x1="182.488" y1="113.336" x2="182.488" y2="17.07"/>
+		
+			<line fill="#4F8ABE" stroke="#005695" stroke-width="2" stroke-linecap="round" stroke-miterlimit="1" stroke-dasharray="4" x1="311.988" y1="71.036" x2="187.488" y2="71.036"/>
+		<g>
+			<g>
+				<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="76.694" y1="54.771" x2="172.262" y2="70.651"/>
+				<g>
+					<polygon fill="#005695" points="169.832,73.192 181.002,72.104 170.784,67.46 					"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<line fill="none" stroke="#005695" stroke-width="2" stroke-miterlimit="1" x1="318.983" y1="69.969" x2="414.552" y2="85.85"/>
+				<g>
+					<polygon fill="#005695" points="412.121,88.391 423.291,87.302 413.073,82.659 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
