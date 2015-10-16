@@ -217,4 +217,4 @@ c. 连接请求方接收到A-RELEASE确认原语。<br>
 <b><i><font face="Microsoft YaHei" color=red>注意：</font></i></b><br>
 <font face="Microsoft YaHei" color=red>在已建立的连接上发送A-ABORT中止服务请求原语可能会破坏正在传输中的数据。</font><br>
 图7-3给出了在两个应用实体间中止已建立连接的过程。<br>
-<center>[]()</center>
+<center>[](https://raw.githubusercontent.com/zssure-thu/DICOM-Chinese/master/Figure/Part%208/PS3.8_7-3.jpg)</center>
