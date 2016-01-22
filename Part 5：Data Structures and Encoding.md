@@ -344,7 +344,7 @@ DICOM中应用实体之间并不协商字符集，它是由通用服务对象对
 #6.1.3 控制字符
 
 交互中的文本数据也许需要一种格式化的信息。控制字符就是用来指出一种格式，但是在DICOM中应尽量少的使用，因为有些设备会不正确的使用这些控制字符。ISO 646:1990 和 ISO 6429:1990中定义了控制字符，如下在DICOM中仅使用C0集中的4个控制字符用来对字符串数据进行编码。
-[表6.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.1_1.jpg)
+[Table6.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.1_1.jpg)
 
 在文本字符串中以CR LF作为新行。
 
@@ -372,9 +372,9 @@ DICOM以后版本中所有新的VR都应具有7.1.2（例：以下VR：OB,OW,SQ,
 扩展编码时使用的转义序列不应包括在字符数的总数中。
 
 
-[表6.1_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.1.jpg)
-[](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.2.jpg)
-[](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.3.jpg)
+[Table6.2_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.1.jpg)
+[Table6.2_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.2.jpg)
+[Table6.2_3](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 6.2_1.3.jpg)
 
 #6.2.1 VR为PN的数据元素中的形意字符及语音字符
 
@@ -477,7 +477,7 @@ VR为 SQ, OF, OW, OB 或 UN的值通常多重性都是1.
 
 一个数据元素会拥有3种数据结构中的一种，3 种结构中的2种都是显示VR的区别在于其长度是否出现，另外一种数据结构是隐式VR的。所有3种数据结构都包含数据标签，数据长度，及数据，如图7.1-1。
 
-[图7.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Figure 7.1_1.jpg)
+[Figure7.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Figure 7.1_1.jpg)
 
 隐式及显式VR数据应不同时出现在一个数据集及其内嵌数据集中，一个数据集使用隐式还是显式，在他们的物质中都取决于协商传输语法（见第10节与附录A）。
 
@@ -511,17 +511,17 @@ VR为 SQ, OF, OW, OB 或 UN的值通常多重性都是1.
 
 	-对于VR为OB, OW, OF, SQ 及 UN,在VR域中两个字符后余下的16位是预留给以后的DICOM标准使用的。这些预留字节应被设置为0000H并不能使用不能解码(Table 7.1-1).。数据长度是一个32位的无符号整形。如果值域有一个显式长度那长在长度域中应该有一个等于值域中字节总数的数值，否则值域的有一个未知长度，其值域未尾由序列界定项标记。
 
-[表7.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_1.jpg)
+[Table7.1_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_1.jpg)
 	-对于VR是UT类型的，在VR域中两个字符后余下的16位是预留给以后的DICOM标准使用的。这些预留字节应被设置为0000H并不能使用不能解码。值域长度是一个无符号32位整形。值域需要有一个显式长度，在长度域中应该有一个等于值域中字节总数的数值。
 		注：VR是UT类型的，也可以有一个非未定义长度如：0xFFFFFFFFH.
 
 	-对于其它的VRs值长度域是紧跟在两字节VR后面的16位无符号整形(Table 7.1-2)，其值应等于值域的总长度。
-[表7.1_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_2.jpg)
+[Table7.1_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_2.jpg)
 
 #7.1.3隐式VR的数据元素结构
 
 当使用隐式VR的数据元素结构时，其由三个连续域组成：数据元素标签，值长度，值域（Table 7.1-3）。如果值域有一个显式长度，在长度域中应该有一个等于值域中字节总数的数值。否则值域的有一个未知长度，其值域未尾由序列界定项标记。
-[表7.1_3](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_3.jpg)
+[Table7.1_3](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.1_3.jpg)
 #7.2组长度
 
 组长度标准数据元素(gggg,0000)应被隐匿的定义给所有VR为UL并且数据多重性为1的数据元素组。在DICOM3.0（见7.4节对数据元素类型的描述）中是一个可选数据元素（数据元素类型3），它提供了一个在局部数据集解码中可跨越整个数据元素组的最佳体制。应用程序可以选择把组长度显式的编码到数据集中也可以选择不使用。所有应用都应可以接受或忽略类似的元素。
@@ -653,12 +653,12 @@ VR为SQ的数据元素的每一个项的都应被编码为以(FFFE,E000)为数�
 	序列界定项(FFFE,E0DD)与界定项(FFFE,E00D)是不相同的，通过以上讲解可以看出序列的最后一项的长度是左边未定义的，如果一个未定义长度的项是未定义长度序列的最后一项，那么在序列界定标签后会紧跟着一个界定项标签。
 
 如一个SQ类型的显示长度数据元素封装着显式长度的项见Table 7.5-1
-[表7.5_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_1.jpg)
+[Table7.5_1](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_1.jpg)
 如一个SQ类型的未定义长度数据元素封装着显式长度的项见Table 7.5-2
-[表7.5_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_2.jpg)
+[Table7.5_2](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_2.jpg)
 在Table 7.5-2中项的数据集中有显式VR出现。
 如一个SQ类型的显示长度数据元素封装着既有显式长度的项也有未定义长度的项见Table 7.5-3
-[表7.5_3](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_3.jpg)
+[Table7.5_3](https://raw.githubusercontent.com/mnhwa/DICOM-Chinese/master/Figure/Part 5/PS3.5_Table 7.5_3.jpg)
 
 
 #7.5.3序列继承
